@@ -1,7 +1,6 @@
 /*
 * CPSC 441 Assignment 4
 * Athena McNeil-Roberts
-* ID# 30042085
 */
 // Bozon channel access protocol
 

@@ -1,6 +1,6 @@
 
 ## CPSC441 Assignment 1
-### Athena McNeil-Roberts 30042085
+### Athena McNeil-Roberts
 
 This program was tested using a Firefox browser primarily on my personal Macintosh computer as well as the university 
 Linux servers through ssh. All webpages used to test are those listed below. 

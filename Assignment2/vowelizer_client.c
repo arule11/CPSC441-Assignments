@@ -1,7 +1,6 @@
 /*
 * CPSC 441 Assignment 2
 * Athena McNeil-Roberts
-* ID# 30042085
 */
 
 #include<sys/socket.h>

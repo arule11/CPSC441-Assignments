@@ -1,6 +1,6 @@
 
 ## CPSC441 Assignment 2
-### Athena McNeil-Roberts 30042085
+### Athena McNeil-Roberts
 
 This program was tested primarily on my personal Macintosh computer as well as the university 
 Linux servers through ssh, using random text and sample sentences listed below. 

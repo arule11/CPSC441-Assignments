@@ -14,3 +14,7 @@ Specifically, write a computer simulation program (in C or C++) that can model (
 - Your program should also report the number of attempted yodels, and the percentage of attempted yodels that were perfect. A "perfect yodel" is one that was melodious from start to finish, without any interruption by other Bozons.
 
 Your program should be easily parameterizable for different values of M, S, and Y (either on the command line, or by prompting the user, or as manifest constants in the source code). You will use these parameters to explore several Bozon configuration scenarios listed below. You may assume that all the Bozons are initially asleep at time zero
+
+## Bonus (optional)
+
+The Bozon parliament is considering the establishment of a standardized "national yodel" of fixed time duration 10.0 time units. If each Bozon emitted this standardized yodel during their wake period, rather than a random (i.e., exponentially distributed) duration, would the channel performance be better, worse, or the same? Use your simulator to explore this scenario.

@@ -1,6 +1,6 @@
 
 ## CPSC441 Assignment 4
-### Athena McNeil-Roberts 30042085
+### Athena McNeil-Roberts
 
 This program was run primarily on my personal Macintosh computer as well as the university 
 Linux servers through ssh

@@ -1,7 +1,6 @@
 /*
 * CPSC 441 Assignment 3
 * Athena McNeil-Roberts
-* ID# 30042085
 */
 // First-In-First-Out packet simulation
 

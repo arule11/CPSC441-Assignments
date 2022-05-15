@@ -1,0 +1,16 @@
+# Task
+
+Your task is to write a program in C or C++ that can estimate the QoS for incoming video streaming traffic on your network. The two QoS metrics of interest are the average queueing delay for packets in the AP buffer, and the packet loss percentage at the wireless AP. There is a simple tradeoff between these two metrics. That is, with a tiny buffer, there will be minimal queueing delay, but there might be really high packet loss. Conversely, with a huge buffer, there will be minimal packet loss, but the packet queueing delays might be really large. Your goal is to find the "sweet spot" for the buffer size that provides a good tradeoff between loss and delay.
+
+# Technical Requirements
+
+In essence, this assignment is a discrete-event network simulation problem, but you should be able to model the system dynamics approximately using even simpler approaches, such as a time-driven simulation, a fluid flow model, or some differential equations. Think of a loop that models the arrival and/or departure of each packet, and using this loop to track the current occupancy of the AP buffer. Packets arrive at certain times, based on the trace file, and depart at certain times, based on the packet's size and the wireless link transmission rate. You may assume that the default AP buffer size can hold B=100 packets (one per buffer, regardless of the packet size), and that the queue is managed in a First-In-First-Out fashion. Please ignore all other WiFi details, such as MAC-layer ACKs and retransmissions. You may also assume that only one video stream is required.
+
+Specifically, you will use your program to answer a number of "what if" questions about the network QoS, such as these:
+
+- For the 5 Mbps WLAN, what would the QoS be if the AP buffer size was B packets? (Vary B over some reasonable range of values, such as from 0 to 1000 in steps of 100. Show a graph (or table) of these results, and suggest a suitable value of B that provides a good tradeoff between delay and loss.) Do this separately for both the Zoom trace and the soccer trace, to see which one is more challenging for your network to handle. Show the results for both, and comment on this in your writeup.
+- If the AP buffer size was fixed at B=100 packets, what would the QoS be for each of these two individual video streams if the WLAN capacity was increased to 6 Mbps instead of 5 Mbps?
+- If the AP buffer size was fixed at B=100 packets, what would the QoS be for each of these two individual video streams if the WLAN capacity was increased to 8 Mbps instead of 5 Mbps?
+- If the AP buffer size was fixed at B=100 packets, what would the QoS be for each of these two individual video streams if the WLAN capacity was increased to 10 Mbps instead of 5 Mbps?
+
+Your program should report a statistical summary that shows the number of incoming packets, the number of delivered packets, the number of lost packets, the packet loss percentage, and the average queueing delay for (delivered) packets. Use a tabular format for reporting these results (for B=100 packets), with one row for each of the four network configurations indicated above (i.e., 5 Mbps, 6 Mbps, 8 Mbps, and 10 Mbps). From these results, you should be able to determine whether it is better to buy buffers (B) or bandwidth (C).

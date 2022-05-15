@@ -1,5 +1,5 @@
 
-# Background
+## Background
 
 The Bozons are curious but friendly creatures who spend all of their lives alternating between two states: sleeping and yodeling. Bozons live in colonies of size M.
 
